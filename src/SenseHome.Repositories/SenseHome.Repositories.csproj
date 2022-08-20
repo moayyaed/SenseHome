@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="User\" />
+    <Folder Include="TemperatureHumidity\" />
+    <Folder Include="Profile\" />
+    <Folder Include="MotionDetection\" />
+    <Folder Include="Subscription\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SenseHome.DataTransferObjects" Version="1.0.7" />
+    <PackageReference Include="SenseHome.DomainModels" Version="1.0.3" />
+  </ItemGroup>
+</Project>

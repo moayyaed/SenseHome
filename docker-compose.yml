@@ -1,0 +1,91 @@
+version: "3.4"
+
+services:
+  sensehome.broker:
+    container_name: broker
+    build:
+      context: .
+      dockerfile: src/SenseHome.Broker/Dockerfile
+    depends_on:
+      - mongodb
+    ports:
+      - 1883:1883
+      - 1884:1884
+
+  sensehome.api:
+    container_name: api
+    build:
+      context: .
+      dockerfile: src/SenseHome.API/Dockerfile
+    depends_on:
+      - mongodb
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:5000
+    ports:
+      - 5000:5000
+
+  sensehome.agent:
+    container_name: agent
+    build:
+      context: .
+      dockerfile: src/SenseHome.Agent/Dockerfile
+    depends_on:
+      - sensehome.broker
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:4000
+    ports:
+      - 4000:4000
+
+  sensehome.datasync:
+    container_name: datasync
+    build:
+      context: .
+      dockerfile: src/SenseHome.DataSync/Dockerfile
+    depends_on:
+      - sensehome.broker
+      - redisdb
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:4100
+    ports:
+      - 4100:4100
+
+  sensehome.webclient:
+    container_name: webclient
+    build:
+      context: .
+      dockerfile: WebClient/Dockerfile
+    depends_on:
+      - sensehome.api
+      - sensehome.agent
+    ports:
+      - 4200:4200
+
+  sensehome.fake-env:
+    container_name: fake-env
+    build:
+      context: .
+      dockerfile: fake-env/Dockerfile
+    depends_on:
+      - sensehome.broker
+    restart: on-failure
+
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo-data:/data/db
+
+  redisdb:
+    image: redis
+    container_name: redisdb
+    ports:
+      - 6379:6379
+
+volumes:
+  mongo-data:
+    driver: local

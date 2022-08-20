@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1703.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenseHome.API", "src\SenseHome.API\SenseHome.API.csproj", "{DCDC8927-B9E9-474D-A07B-FE7E62393EEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenseHome.Repositories", "src\SenseHome.Repositories\SenseHome.Repositories.csproj", "{21C4C69A-ECAF-4700-84F4-FBD93A4B3903}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenseHome.Services", "src\SenseHome.Services\SenseHome.Services.csproj", "{3FC11875-0DF0-4235-BA0D-8C2DF5B441F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenseHome.Broker", "src\SenseHome.Broker\SenseHome.Broker.csproj", "{59B29B42-3EC0-4EB0-A884-75B11EB25872}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenseHome.DataSync", "src\SenseHome.DataSync\SenseHome.DataSync.csproj", "{94E95F9C-BA20-4F0A-A919-AF9040468275}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SenseHome.Agent", "src\SenseHome.Agent\SenseHome.Agent.csproj", "{9EA811F5-B376-4F70-9CFE-A931976FD1E6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCDC8927-B9E9-474D-A07B-FE7E62393EEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCDC8927-B9E9-474D-A07B-FE7E62393EEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCDC8927-B9E9-474D-A07B-FE7E62393EEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCDC8927-B9E9-474D-A07B-FE7E62393EEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21C4C69A-ECAF-4700-84F4-FBD93A4B3903}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21C4C69A-ECAF-4700-84F4-FBD93A4B3903}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21C4C69A-ECAF-4700-84F4-FBD93A4B3903}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21C4C69A-ECAF-4700-84F4-FBD93A4B3903}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3FC11875-0DF0-4235-BA0D-8C2DF5B441F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3FC11875-0DF0-4235-BA0D-8C2DF5B441F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3FC11875-0DF0-4235-BA0D-8C2DF5B441F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3FC11875-0DF0-4235-BA0D-8C2DF5B441F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59B29B42-3EC0-4EB0-A884-75B11EB25872}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59B29B42-3EC0-4EB0-A884-75B11EB25872}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59B29B42-3EC0-4EB0-A884-75B11EB25872}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59B29B42-3EC0-4EB0-A884-75B11EB25872}.Release|Any CPU.Build.0 = Release|Any CPU
+		{94E95F9C-BA20-4F0A-A919-AF9040468275}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94E95F9C-BA20-4F0A-A919-AF9040468275}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94E95F9C-BA20-4F0A-A919-AF9040468275}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94E95F9C-BA20-4F0A-A919-AF9040468275}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9EA811F5-B376-4F70-9CFE-A931976FD1E6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9EA811F5-B376-4F70-9CFE-A931976FD1E6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9EA811F5-B376-4F70-9CFE-A931976FD1E6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9EA811F5-B376-4F70-9CFE-A931976FD1E6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27B2CEF0-A58B-4503-B42F-1C8E7F57BFE0}
+	EndGlobalSection
+EndGlobal

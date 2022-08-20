@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="User\" />
+    <Folder Include="Mapper\" />
+    <Folder Include="UserExtension\" />
+    <Folder Include="Configurations\" />
+    <Folder Include="Profile\" />
+    <Folder Include="TemperatureHumidity\" />
+    <Folder Include="MotionDetection\" />
+    <Folder Include="Subscription\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SenseHome.Repositories\SenseHome.Repositories.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="10.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.10" />
+    <PackageReference Include="SenseHome.DataTransferObjects" Version="1.0.7" />
+    <PackageReference Include="SenseHome.Common" Version="1.0.3" />
+  </ItemGroup>
+</Project>
