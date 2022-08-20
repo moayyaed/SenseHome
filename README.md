@@ -7,7 +7,7 @@
 
 
 
-**User setup **
+**User setup**
 
 * Go to `http://localhost:5000/swagger` 
 * Internal-Login with credential `accessId: admin`, `password:12345678`
