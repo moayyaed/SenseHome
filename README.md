@@ -5,6 +5,17 @@
 - `docker-compose build`
 - `docker-compose up -d`
 
+
+
+**User setup **
+
+* Go to `http://localhost:5000/swagger` 
+* Internal-Login with credential `accessId: admin`, `password:12345678`
+* Copy the token and paste to swagger Authorization box with `bearer ` prefix
+* Create a user to login from web/mobile client 
+
+
+
 **Connect Web Client**
 
 - Clone the web client from [https://github.com/sensehome/WebClient](https://github.com/sensehome/WebClient)
