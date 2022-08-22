@@ -52,17 +52,6 @@ services:
     ports:
       - 4100:4100
 
-  sensehome.webclient:
-    container_name: webclient
-    build:
-      context: .
-      dockerfile: WebClient/Dockerfile
-    depends_on:
-      - sensehome.api
-      - sensehome.agent
-    ports:
-      - 4200:4200
-
   sensehome.fake-env:
     container_name: fake-env
     build:
